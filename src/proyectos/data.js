@@ -166,7 +166,7 @@ export const proyectos = [
   {
     img: "../../../img/spotify.webp",
     title: "Spotify-Clone",
-    link: "https://www.linkedin.com/posts/osnaider-mart%C3%ADnez_clon-de-la-p%C3%A1gina-de-spotify-echo-con-react-activity-7119712602342965248-upgL?utm_source=share&utm_medium=member_desktop",
+    link: "https://www.canva.com/design/DAGGjKIurUM/Fyq-CXUlwbBx5VVqN4xWXA/watch?utm_content=DAGGjKIurUM&utm_campaign=designshare&utm_medium=link&utm_source=editor",
     description: `Clon de la página de Spotify con autenticación de usuario, reproductor de canciones, etc `,
     technologies: [
       {
