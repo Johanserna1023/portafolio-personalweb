@@ -1,0 +1,39 @@
+---
+import Header from "../components/header/Header.astro";
+import "../style/index.css";
+import Main from "../components/main/main.astro";
+import Footer from "../components/footer/Footer.astro";
+import previewpage from "../../public/img/preview-page.webp";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="Elvis J Serna de desarrollador web Frontend React Js , Astro , Next Js"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://osnaidermartinez.netlify.app/" />
+    <meta property="og:site_name" content="Elvis J Serna" />
+    <meta property="og:title" content="Elvis J Serna Portafolio" />
+    <meta property="og:image" content={previewpage} />
+    <script
+      src="https://kit.fontawesome.com/2898a0ac51.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Portafolio | Elvis J Serna</title>
+  </head>
+  <body>
+    <Header />
+    <Main />
+    <Footer />
+
+    <script
+      src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
+    ></script>
+  </body>
+</html>

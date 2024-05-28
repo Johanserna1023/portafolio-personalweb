@@ -1,0 +1,86 @@
+<header class="header">
+  <h1 id="inicio">Portafolio</h1>
+  <!-- <div class="effect-items-menu" id="menu-hover"></div> -->
+  <nav class="nav">
+    <ul class="ul-nav">
+      <a href="#inicio">
+        <li class="li-nav">Inicio</li>
+      </a>
+
+      <a href="#proyectos">
+        <li class="li-nav">Proyectos</li>
+      </a>
+
+      <a href="#skills">
+        <li class="li-nav">Habilidades</li>
+      </a>
+      <a href="#estudios">
+        <li class="li-nav">Estudios</li>
+      </a>
+      <a href="#sobremi">
+        <li class="li-nav">Sobre mi</li>
+      </a>
+
+      <a href="#contacto">
+        <li class="li-nav">Contacto</li>
+      </a>
+    </ul>
+  </nav>
+  <div class="container-bnt-menu">
+    <div class="btn-menu">
+      <span class="linea-menu" id="linea1"></span>
+      <span class="linea-menu" id="linea2"></span>
+      <span class="linea-menu" id="linea3"></span>
+    </div>
+  </div>
+
+  <div class="menu-drop"></div>
+
+  <script>
+    const $menu = document.querySelector(".nav");
+    const $menuDrop = document.querySelector(".menu-drop");
+    const $btnmenu = document.querySelector(".btn-menu");
+    const $linea1 = document.querySelector("#linea1");
+    const $linea2 = document.querySelector("#linea2");
+    const $linea3 = document.querySelector("#linea3");
+    $btnmenu.addEventListener("click", () => {
+      $linea1.classList.toggle("activelinea1__bars-menu");
+      $linea2.classList.toggle("activelinea2__bars-menu");
+      $linea3.classList.toggle("activelinea3__bars-menu");
+      $menu.classList.toggle("menu-activado");
+      $menuDrop.classList.toggle("activa-menu-drop");
+    });
+
+    $menuDrop.addEventListener("click", () => {
+      $linea1.classList.toggle("activelinea1__bars-menu");
+      $linea2.classList.toggle("activelinea2__bars-menu");
+      $linea3.classList.toggle("activelinea3__bars-menu");
+      $menu.classList.toggle("menu-activado");
+      $menuDrop.classList.toggle("activa-menu-drop");
+    });
+  </script>
+
+  <script>
+    // const menuHover = document.querySelector("#menu-hover");
+    // const listItems = document.querySelectorAll(".li-nav");
+    // listItems.forEach((item) => {
+    //   const { top, left, width, height } = item.getBoundingClientRect();
+    //   item.addEventListener("mouseenter", () => {
+    //     menuHover.style.setProperty("--height", `${height}px`);
+    //     menuHover.style.setProperty("--width", `${width}px`);
+    //     menuHover.style.setProperty("--top", `${top}px`);
+    //     menuHover.style.setProperty("--left", `${left}px`);
+
+    //     menuHover.style.visibility = "visible";
+    //     menuHover.style.opacity = 1;
+    //   });
+    // });
+
+    // listItems.forEach((item) => {
+    //   item.addEventListener("mouseleave", () => {
+    //     menuHover.style.visibility = "hidden";
+    //     menuHover.style.opacity = 0;
+    //   });
+    // });
+  </script>
+</header>
